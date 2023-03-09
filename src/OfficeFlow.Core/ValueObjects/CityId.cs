@@ -2,7 +2,7 @@
 
 namespace OfficeFlow.Core.ValueObjects;
 
-public record CityId
+public sealed record CityId
 {
     public Guid Value { get; }
 

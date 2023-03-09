@@ -1,6 +1,6 @@
 ﻿namespace OfficeFlow.Core.ValueObjects;
 
-public record CreatedDate
+public sealed record CreatedDate
 {
     public DateTimeOffset Value { get; }
 

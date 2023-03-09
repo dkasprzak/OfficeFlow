@@ -1,6 +1,6 @@
 ﻿namespace OfficeFlow.Core.ValueObjects;
 
-public record UpdatedDate
+public sealed record UpdatedDate
 {
     public DateTimeOffset Value { get; }
 

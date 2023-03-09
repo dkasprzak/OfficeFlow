@@ -2,7 +2,7 @@
 
 namespace OfficeFlow.Core.ValueObjects;
 
-public record ProjectName
+public sealed record ProjectName
 {
     public string Value { get; }
 

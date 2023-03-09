@@ -11,7 +11,7 @@ public class Project
     public CreatedDate CreatedDate { get; private set; }
     public UpdatedDate UpdatedDate { get; private set; }
     public CityId CityId { get; private set; }
-    public ProjectOwnerId ProjectOwnerId { get; private set; }
+    public ProjectOwnerId CustomerId { get; private set; }
 
     public Project(ProjectId id, ProjectName projectName, ProjectStatus status)
     {

@@ -2,7 +2,7 @@
 
 namespace OfficeFlow.Core.ValueObjects;
 
-public record ProjectId
+public sealed record ProjectId
 {
     public Guid Value { get; }
 
