@@ -9,7 +9,7 @@ public sealed class Employee : User
     public Date HiredDate { get; private set; }
 
     public Employee(UserId id, UserName name, UserSurname surname,
-        Login login, string email, string password, string role,
+        Login login, Email email, string password, string role,
         bool isActive, Date cratedAt, double hourlyRate,
         string position, Date hiredDate)
     {

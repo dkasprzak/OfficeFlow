@@ -7,9 +7,10 @@ public class User
     public UserId Id { get; set; }
     public UserName Name { get; set; }
     public UserSurname Surname { get; set; }
+    public PhoneNumber PhoneNumber { get; set; }
     public Login Login { get; set; }
     //TO-DO
-    public string Email { get; set; }
+    public Email Email { get; set; }
     //TO-DO 
     public string Passowrd { get; set; }
     public string Role { get; set; }

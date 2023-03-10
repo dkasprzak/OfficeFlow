@@ -4,9 +4,9 @@ namespace OfficeFlow.Core.Entities;
 
 public sealed class Customer : User
 {
-    public string Pesel { get; private set; }
-    public string IdCardNumber { get; private set; }
-    public string PostalCode { get; private set; }
+    public Pesel Pesel { get; private set; }
+    public IdCardNumber IdCardNumber { get; private set; }
+    public PostalCode PostalCode { get; private set; }
     public string City { get; private set; }
     public string Country { get; private set; }
     public IEnumerable<Project> Projects => _projects;
@@ -14,8 +14,8 @@ public sealed class Customer : User
     private readonly HashSet<Project> _projects = new();
 
     public Customer(UserId id, UserName name, UserSurname surname,
-        Login login, string email, string password, string role,
-        bool isActive, string pesel, string idCardNumber, string postalCode,
+        Login login, Email email, string password, string role,
+        bool isActive, Pesel pesel, IdCardNumber idCardNumber, PostalCode postalCode,
         string city, string country, Date createdAt)
     {
         Id = id;
